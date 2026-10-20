@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sprits Tonight Counter</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Sprits Tonight</h1>
+    <p class="subtitle">Track how many drinks each person had tonight.</p>
+
+    <form id="add-person-form" class="add-form">
+      <label for="name-input">Name</label>
+      <div class="row">
+        <input id="name-input" type="text" placeholder="Add a name" autocomplete="off" required />
+        <button type="submit">Add</button>
+      </div>
+    </form>
+
+    <p id="status" class="status" aria-live="polite"></p>
+
+    <section aria-label="Drink counters">
+      <ul id="people-list" class="people-list"></ul>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
