@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tonight's Drinks Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Tonight's Drinks Counter</h1>
+      <p class="subtitle">Add names and count how many drinks each person had tonight.</p>
+
+      <form id="add-name-form" class="add-form">
+        <label for="name-input" class="sr-only">Name</label>
+        <input id="name-input" type="text" placeholder="Enter a name" required maxlength="30" />
+        <button type="submit">Add</button>
+      </form>
+
+      <ul id="people-list" class="people-list"></ul>
+
+      <button id="reset-tonight" class="reset-button" type="button">Reset tonight</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
